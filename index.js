@@ -14,7 +14,13 @@ app.use(bodyParser.json())
 app.use(express.static('public'))
 
 // Templating engine
+app.engine('hbs', exphbs.engine({ extname: '.hbs' }))
+app.set('view engine', 'hbs')
 
+// Render the homepage
+app.get('', (req, res) => {
+    res.render('home')
+})
 
 // Render Server
 app.listen(port, ()=> {

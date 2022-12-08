@@ -15,3 +15,7 @@
         In project terminal run:-
 
         npm i express mongoose morgan mysql dotenv multer body-parser express-handlebars cors nodemon --save
+
+3. To run :-
+
+        nodemon index.js
