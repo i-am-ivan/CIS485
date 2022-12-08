@@ -1,0 +1,12 @@
+{
+  "name": "cis485",
+  "version": "1.0.0",
+  "description": "A node express web application with portal and shopping cart functionality.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["ecommerce"],
+  "author": "",
+  "license": "ISC"
+}
