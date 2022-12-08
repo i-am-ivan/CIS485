@@ -14,6 +14,4 @@
 
         In project terminal run:-
 
-        npm i express mongoose morgan dotenv multer body-parser cors nodemon --save
-
-        npm init -y
+        npm i express mongoose morgan mysql dotenv multer body-parser cors nodemon --save
