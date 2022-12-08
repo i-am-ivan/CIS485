@@ -1,26 +1,17 @@
 const express = require('express')
-const http = require('http')
-const config = require('config')
-const routes = require('routes')
+const exphbs = require('express-handlebars')
+const bodyParser = require('body-parser')
+const mysql = require('mysql')
+
 const app = express()
+const port = process.env.PORT || 3000
 
-require('dotenv').config
-
-// Routing
-routes(app)
-
-// Catch 404 forwarding error
-app.use((req, res, next) => {
-    const error = new Error(' Not Found ')
-    console.log(error)
-    error.status = 404
-    res.send(' Something went wrong! ')
-    next(error)
-})
+// Parsing middleware
+app.use(bodyParser.urlencoded({ extended: false }))
 
 // Render Server
-app.listen(process.env.PORT ||  config.PORT, ()=> {
-    console.log(`\n ${config.appName} listening on ${config.port} \n`)
+app.listen(port, ()=> {
+    console.log(`\n Listening on PORT ${port} \n`)
 })
 
 module.exports = app
