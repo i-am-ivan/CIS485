@@ -1,6 +1,6 @@
 # CIS485 - PROJECT
 
-a node express web application with portal and shopping cart functionality. The application, in general, is to have a login, logoff, registration, products ( 4 product s ), about, contact and cart, thankyou web content.
+A node express web application with portal and shopping cart functionality. The application, in general, is to have a login, logoff, registration, products ( 4 product s ), about, contact and cart, thankyou web content.
 
 1. CIS485 PROJECT EXERCISE01
 
